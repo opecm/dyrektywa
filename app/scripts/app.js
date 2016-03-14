@@ -30,6 +30,12 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+ })
+      .when('/date', {
+        templateUrl: 'views/dateView.html',
+        controller: 'DateCtrl',
+        controllerAs: 'date'
+
       })
       .otherwise({
         redirectTo: '/'
