@@ -37,6 +37,15 @@ angular
         controllerAs: 'date'
 
       })
+      .when('/weirdThing', {
+        templateUrl: 'views/weirdThingView.html',
+        controller: 'weirdThingCtrl',
+        controllerAs: 'weirdThing'
+
+      })
+
+
+
       .otherwise({
         redirectTo: '/'
       });
