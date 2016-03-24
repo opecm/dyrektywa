@@ -9,15 +9,16 @@
 angular.module('mojaApkaApp')
     .directive('weirdThingDirective', function () {
       return {
+          template: '<div></div>',
           restrict: 'E',
           scope: {
-            rWidth: '=',
             rHeight: '=',
+            rWidth: '=',
+            rFont: '=',
             rColor: '='
           },
           link: function ($scope, element) {
-            element.html(' <div class="magic">nie dzialam</div>')
-            $('div.magic').css({"background-color":$scope.rColor, "height" :$scope.rHeight, "width" :$scope.rWidth})
+            document.getElementById("weirdThingDirective")
           }
         }
     });

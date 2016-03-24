@@ -17,7 +17,7 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngMaterial'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -43,6 +43,21 @@ angular
         controllerAs: 'weirdThing'
 
       })
+
+      .when('/faasList', {
+        templateUrl: 'views/faasList.html',
+        controller: 'FaasListCtrl',
+        controllerAs: 'faasList'
+      })
+
+      .when('/faasList/faasDetail/:name', {
+        templateUrl: 'views/faasDetailView.html',
+        controller: 'faasDetailCtrl',
+        controllerAs: 'faasDetail'
+      })
+
+
+
 
 
 

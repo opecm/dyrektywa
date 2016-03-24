@@ -1,0 +1,8 @@
+
+<!--
+
+<ul>
+<li ng-repeat="x in myData">{{x.name +",  "+ x.url}}</li>
+</ul>
+ Inna wersja faas-list.html
+
